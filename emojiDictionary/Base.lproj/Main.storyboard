@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="h9Q-Ys-Hts">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="h9Q-Ys-Hts">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -62,17 +62,33 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category: Smiley" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jfg-0t-s59">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthyear: 2010" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKP-dO-JzU">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="pKf-4F-pQg" firstAttribute="centerX" secondItem="FGZ-Y9-UR2" secondAttribute="centerX" id="Dmc-tr-FQu"/>
                             <constraint firstItem="pKf-4F-pQg" firstAttribute="top" secondItem="N6Y-K9-LG1" secondAttribute="bottom" constant="79" id="GgM-AK-4WY"/>
+                            <constraint firstItem="Jfg-0t-s59" firstAttribute="top" secondItem="pKf-4F-pQg" secondAttribute="bottom" constant="20" id="KBd-tP-gnC"/>
+                            <constraint firstItem="kKP-dO-JzU" firstAttribute="top" secondItem="Jfg-0t-s59" secondAttribute="bottom" constant="20" id="LfX-ll-uwP"/>
                             <constraint firstItem="N6Y-K9-LG1" firstAttribute="centerX" secondItem="FGZ-Y9-UR2" secondAttribute="centerX" id="SdE-ce-cOS"/>
                             <constraint firstItem="N6Y-K9-LG1" firstAttribute="centerX" secondItem="FGZ-Y9-UR2" secondAttribute="centerX" id="W8X-Nw-xLM"/>
                             <constraint firstItem="N6Y-K9-LG1" firstAttribute="top" secondItem="13V-Z1-cCS" secondAttribute="bottom" constant="100" id="ivw-mO-Fbh"/>
+                            <constraint firstItem="kKP-dO-JzU" firstAttribute="centerX" secondItem="FGZ-Y9-UR2" secondAttribute="centerX" id="mYI-yy-kif"/>
+                            <constraint firstItem="Jfg-0t-s59" firstAttribute="centerX" secondItem="FGZ-Y9-UR2" secondAttribute="centerX" id="wMJ-8x-vHK"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="birthYearLabel" destination="kKP-dO-JzU" id="Xmd-Kk-2fS"/>
+                        <outlet property="categoryLabel" destination="Jfg-0t-s59" id="96B-eB-boh"/>
                         <outlet property="definitionLabel" destination="pKf-4F-pQg" id="tXH-8A-D2e"/>
                         <outlet property="emojiLabel" destination="N6Y-K9-LG1" id="r6x-eE-Rt4"/>
                     </connections>
